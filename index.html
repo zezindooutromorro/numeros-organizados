@@ -13,20 +13,40 @@
         <div class="logo">
             <img src="projeto7.png" alt="Logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="nomes.html">Nomes</a></li>
+               
+            </ul>
+        </nav>
+        <div class="logo">
+            <button  id="toggle-button">Música</button>
+        </div>
+       
     </header>
-
-
+             
 
     <div class="container">
-        <h1>Organizar Números</h1>
-        <p>Digite os números separados por vírgula (ex: 5, 2, 9, 1)</p>
-        <input type="text" id="inputNumbers" placeholder="Digite os números aqui">
-        <button onclick="organizeNumbers()">Organizar</button>
+        <h1>Organizar Números em Ordem Crescente</h1>
+        <input type="number" id="numeroInput" placeholder="Digite um número">
+        <button onclick="adicionarNumero()">Adicionar Número</button>
+        <button onclick="ordenarNumeros()">Ordenar Números</button>
 
-        <div class="result" id="result"></div>
+        <ul id="listaNumeros">
+            
+        </ul>
     </div>
 
+   
+
+    <audio id="audio" loop>
+        <source src="ninguem deu nada para nos.mp3" type="audio/mp3">
+        Seu navegador não suporta a tag de áudio.
+    </audio>
+
+    
     <script src="script.js"></script>
+
 
 
     <footer>
